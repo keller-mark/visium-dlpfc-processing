@@ -28,3 +28,23 @@ TODO
 
 TODO
 
+## To obtain scale factors
+
+```R
+> library(STexampleData)
+> spe <- Visium_humanDLPFC()
+> imgData(spe)
+DataFrame with 2 rows and 4 columns
+      sample_id    image_id   data scaleFactor
+    <character> <character> <list>   <numeric>
+1 sample_151673      lowres   ####   0.0450045
+2 sample_151673       hires   ####   0.1500150
+
+> imgData(spe)[1, 'data']
+[[1]]
+600 x 600 (width x height) LoadedSpatialImage
+
+> imgData(spe)[2, 'data']
+[[1]]
+2000 x 2000 (width x height) LoadedSpatialImage
+```
