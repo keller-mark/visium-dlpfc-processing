@@ -18,15 +18,12 @@ saveRDS(sce, file="Human_DLPFC_Visium_processedData_sce_scran_spatialLIBD.rds")
 
 ## rds to AnnData with manual layer annotations
 
-See Jupyter notebook
+See Jupyter notebook `convert_rds_to_adata.ipynb`
 
 ## All to SpatialData
 
-TODO
+See Jupyter notebook `convert_all_to_spatialdata.ipynb`
 
-## TIFF to OME-TIFF?
-
-TODO
 
 ## To obtain scale factors
 
